@@ -1,0 +1,198 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdf6f6; /* Soft cream/pink background */
+    color: #5a4a4a;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Typography */
+.script-font {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: #d4a5a5;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #8e7f9e; /* Soft lavender */
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fdf6f6 0%, #f3e5f5 100%);
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* Sparkle Animation */
+.sparkles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.sparkle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #ffd700; /* Gold */
+    border-radius: 50%;
+    animation: twinkle 2s infinite ease-in-out;
+    box-shadow: 0 0 10px #ffd700;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Positioning sparkles randomly */
+.sparkle:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+.sparkle:nth-child(2) { top: 30%; left: 80%; animation-delay: 0.5s; }
+.sparkle:nth-child(3) { top: 60%; left: 10%; animation-delay: 1s; }
+.sparkle:nth-child(4) { top: 80%; left: 50%; animation-delay: 1.5s; }
+
+/* Gallery Grid */
+.gallery-section {
+    padding: 40px 20px;
+}
+
+/* Container for the scrolling photos */
+.marquee-container {
+    width: 100%;
+    overflow: hidden; /* Hides the photos that are "off-screen" */
+    padding: 20px 0;
+    background: linear-gradient(90deg, #fdf6f6 0%, #f3e5f5 50%, #fdf6f6 100%);
+}
+
+/* The long track that actually moves */
+.marquee-track {
+    display: flex;
+    width: max-content; /* Makes the track as wide as all the photos combined */
+    animation: scroll 25s linear infinite; /* 25s is the speed, 'infinite' keeps it going */
+}
+
+/* The individual photo cards */
+.photo-card {
+    width: 300px; /* Fixed width for uniformity */
+    height: 200px;
+    margin: 0 15px; /* Space between photos */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    flex-shrink: 0; /* Prevents photos from squishing */
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Pause animation when hovering over a photo */
+.marquee-container:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* The Animation Logic */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Move left by exactly 50% of the track's width (because we duplicated the photos) */
+        transform: translateX(-50%);
+    }
+}
+
+.photo-card {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+    transform: scale(1.02);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Playlist Section */
+.playlist-section {
+    padding: 40px 20px;
+    background-color: #fff0f5; /* Lavender blush */
+    text-align: center;
+}
+
+.player-container {
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Goals Section */
+.goals-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.goal-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px dashed #d4a5a5;
+    text-align: center;
+}
+
+.goal-card ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.goal-card li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3e5f5;
+    color: #8e7f9e;
+}
