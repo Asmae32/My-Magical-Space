@@ -239,3 +239,96 @@ audio {
     border-radius: 30px;
     outline: none;
 }
+/* Inspirations Section */
+.inspirations-section {
+    padding: 80px 20px;
+    background-color: #f8f9fa; /* Light grey for contrast */
+    text-align: center;
+}
+
+.section-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: #8e7f9e;
+    margin-bottom: 40px;
+}
+
+/* The Grid for the Cards */
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The Card Container */
+.icon-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden; /* Keeps the image inside the rounded corners */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.icon-card:hover {
+    transform: translateY(-10px); /* Lifts the whole card up */
+}
+
+/* The Image Area */
+.icon-image {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.icon-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Zoom effect on the image when hovering the card */
+.icon-card:hover .icon-image img {
+    transform: scale(1.1);
+}
+
+/* The Quote Overlay */
+.icon-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    transform: translateY(100%); /* Hidden by default */
+    transition: transform 0.4s ease;
+}
+
+.icon-card:hover .icon-overlay {
+    transform: translateY(0); /* Slides up on hover */
+}
+
+.quote {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    color: #d4a5a5;
+    display: block;
+}
+
+/* Text below the photo */
+.icon-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    margin: 20px 0 10px;
+    color: #5a4a4a;
+}
+
+.icon-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #7a6b7a;
+    padding: 0 20px 20px;
+    line-height: 1.5;
+}
