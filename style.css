@@ -468,3 +468,50 @@ audio {
     background: #b58a8a;
     transform: translateY(-3px);
 }
+/* Random Facts Section */
+.random-facts-section {
+    padding: 60px 20px;
+    background-color: #fdf6f6;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    border: 2px dashed #d4a5a5;
+    min-height: 100px; /* Prevents jumping when text changes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fact-display {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #5a4a4a;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.fact-button {
+    background: paleturquoise;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(212, 165, 165, 0.4);
+}
+
+.fact-button:hover {
+    background: paleturquoise;
+    transform: translateY(-3px);
+}

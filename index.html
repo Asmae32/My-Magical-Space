@@ -227,10 +227,10 @@
 
             <!-- A standard card -->
             <div class="vision-card">
-                <img src="germany.png" alt="Future Goal">
+                <img src="aunt.png" alt="Future Goal">
                 <div class="card-content">
-                    <h3>Become fluent in German</h3>
-                    <p>Communicate with other people in different countries, sound cool and show off to my classmates.</p>
+                    <h3>Rich Single Aunt</h3>
+                    <p>My goal is to be that rich, single, independant, always traveling, mysterious aunt that comes once in a while.</p>
                 </div>
             </div>
 
@@ -248,11 +248,21 @@
                 <img src="piano.png" alt="Future Goal">
                 <div class="card-content">
                     <h3>Learn to Play the Piano</h3>
-                    <p>Playing my favorite songs by heart.</p>
+                    <p>Playing my favorite songs by heart. Especially the classical ones.</p>
                 </div>
             </div>
 
         </div>
+
+            <!-- Random Facts Section -->
+    <section class="random-facts-section">
+        <h2>Did You Know?</h2>
+        <div class="fact-card">
+            <p id="fact-display">Loading a fun fact...</p>
+        </div>
+        <button id="new-fact-btn" class="fact-button">Tell me another! 🎲</button>
+    </section>
+
     </section>
     <!-- Make Friends Section -->
     <section class="make-friends-section">
@@ -278,10 +288,36 @@
             <button type="submit" class="friend-button">Send a Friendship Note 📜</button>
         </form>
     </section>
+<script>
+    // A list of your fun facts
+    const facts = [
+        "I once read a 200 page novel in 1 night",
+        "When I love, I go all in.When I hate, I go all in and go overboard",
+        "There only 3 people in my life who know my real personality. And no, my parents aren't one of them.",
+        "I'm afraid of cockroaches.",
+        "I can speak three languages and I'm currently learning 2 more.",
+        "My favorite season is autumn because I like wearing warm and fluffy clothes, and I was also born on September soo...",
+        "Music is my drug and can make a hidden part of me come out like this ⚡",
+        "I can play the guitar, but only Fur Elise without the left hand.."
+    ];
 
+    // Function to show a random fact
+    function showRandomFact() {
+        const randomIndex = Math.floor(Math.random() * facts.length);
+        document.getElementById('fact-display').textContent = facts[randomIndex];
+    }
+
+    // Show a fact when the page loads
+    showRandomFact();
+
+    // Add a click event to the button
+    document.getElementById('new-fact-btn').addEventListener('click', showRandomFact);
+</script>
+
+
+</body>
+</html>
     <footer>
         <p>Made with ✨ and a lot of matcha 🍵.</p>
     </footer>
 
-</body>
-</html>
