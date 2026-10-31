@@ -393,3 +393,78 @@ audio {
     max-width: 1200px;
     margin: 0 auto;
 }
+/* Make Friends Section */
+.make-friends-section {
+    padding: 80px 20px;
+    background-color: #fff0f5;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 30px 30px 0 0;
+}
+
+.friend-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: #8e7f9e;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* The Form Container */
+.friend-form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border: 2px dashed #d4a5a5;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.input-group label {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    color: #d4a5a5;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.friend-form input, .friend-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0c3c3;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background: #fdf6f6;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensures padding doesn't break the width */
+}
+
+.friend-form input:focus, .friend-form textarea:focus {
+    outline: none;
+    border-color: #d4a5a5;
+    background: white;
+}
+
+.friend-button {
+    background: #d4a5a5;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(212, 165, 165, 0.4);
+}
+
+.friend-button:hover {
+    background: #b58a8a;
+    transform: translateY(-3px);
+}

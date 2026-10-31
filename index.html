@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Whimsical World</title>
@@ -139,11 +140,11 @@
             <!-- Song 2 -->
             <div class="audio-card">
                 <div class="song-info">
-                    <h3>Old is Gold</h3>
-                    <p>Destiny's Child</p>
+                    <h3>A taste of ethereal arabic music</h3>
+                    <p>Fairouz</p>
                 </div>
                 <audio controls>
-                    <source src="audio/31-40 -- 8 clips -- edit-   ⚯͛ --.mp3" type="audio/mpeg">
+                    <source src="audio/Fairouz - Konna Netlaka  (Translated by.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
@@ -252,6 +253,30 @@
             </div>
 
         </div>
+    </section>
+    <!-- Make Friends Section -->
+    <section class="make-friends-section">
+        <h2>Let's Be Friends! ✨</h2>
+        <p class="friend-subtitle">If you like my vibe, my music, or just want to say hi, drop a line!</p>
+
+        <form class="friend-form" action="https://formspree.io/f/myeenkqb" method="POST">
+            <div class="input-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="What should I call you?" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="So I can write back!" required>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Tell me something about you!</label>
+                <textarea id="message" name="message" placeholder="Your favorite color, a song you love, or just 'Hi'..." rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="friend-button">Send a Friendship Note 📜</button>
+        </form>
     </section>
 
     <footer>
