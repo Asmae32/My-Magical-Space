@@ -632,4 +632,78 @@ audio {
     background: rgba(0,0,0,0.1);
     border-radius: 50%;
 }
+/* Soundtrack Section */
+.soundtrack-section {
+    padding: 80px 20px;
+    background-color: #fdf6f6;
+    text-align: center;
+}
 
+.soundtrack-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: #8e7f9e;
+    margin-bottom: 40px;
+}
+
+/* Playlist Container */
+.playlist-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    text-align: left;
+}
+
+.playlist-container h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #d4a5a5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Individual Track */
+.track {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #e0c3c3;
+}
+
+.track:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.track-info {
+    margin-bottom: 10px;
+}
+
+.song-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #5a4a4a;
+    display: block;
+}
+
+.artist-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: #8e7f9e;
+}
+
+/* Customizing the Native Audio Player */
+audio {
+    width: 100%;
+    border-radius: 30px;
+    outline: none;
+}
+
+/* Optional: Add a little "Now Playing" animation */
+.track.active audio {
+    border: 2px solid #d4a5a5;
+    box-shadow: 0 0 10px rgba(212, 165, 165, 0.3);
+}
